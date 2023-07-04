@@ -6,7 +6,7 @@
     <title>form</title>
   </head>
   <body>
-    <form action="action.php" method="get">
+    <form action="action.php" method="post" autocomplete="off">
       <div>
         <label for="title">title : </label>
         <label for="Mr"> Mr</label>
@@ -120,8 +120,10 @@
       <div>
         <button type="button">Click Me</button>
         <button type="reset">reset</button>
-        <button type="menu">menu</button>
-        <button type="submit">submit</button>
+        <!-- disabled -->
+        <button type="menu" disabled>menu</button>
+        <!-- accesskey -->
+        <button type="submit" accesskey="r">submit</button>
       </div>
     </form>
   </body>
