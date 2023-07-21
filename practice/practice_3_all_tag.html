@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>practice</title>
+    <!-- <style type="text/css">
+      table,
+      th,
+      td {
+        border: 1px solid rgb(12, 6, 11);
+        border-spacing: 0;
+      }
+    </style> -->
+  </head>
+  <body>
+    <header>
+      <p id="section1">HOME / TOURISMTOURIST / PLACES / Gateway of India</p>
+      <div>
+        <label for="More">More</label>
+        <select id="More" name="More">
+          <option>MEDIA GALLERY</option>
+          <option>RIGHUT TO INFORMATION</option>
+        </select>
+      </div>
+      <br /><br />
+      <hr />
+      <br /><br />
+      <h1><u>Gateway of India</u></h1>
+    </header>
+    <section>
+      <p>
+        The
+        <a
+          href="https://mumbaicity.gov.in/tourist-place/gateway-of-india/"
+          target="_parent"
+          >Gateway of India</a
+        >is an arch monument built <br />
+        during the <del>19th century</del> <ins>20th century</ins> in Bombay,
+        India. The monument
+        <br />
+        was erected to commemorate the landing of King George V a <br />
+        nd Queen Mary at Apollo Bunder on their visit to India in <b>1911.</b>
+      </p>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Gateway_of_India_at_night.jpg"
+        height="400"
+        width="400"
+      />
+      <a href="tel:98867400">contact this number</a> |
+      <a href="mailto:ramesh@gmail.com">sent this email</a>
+      <p>
+        Built in Indo-Saracenic style, the foundation stone <br />
+        for the <strong>Gateway of India</strong> was laid on 31 March 1911.
+        <br />
+        The structure is an arch made of basalt, 26 metres <br />
+        <samp style="color: darkred">(85 feet)</samp> high. The final design of
+        George Wittet was <br />
+        sanctioned in 1914 and the construction of the <br />
+        monument was completed in <mark>1924.</mark> The Gateway <br />
+        was later used as a symbolic ceremonial entrance to <br />
+        India for Viceroys and the new Governors of Bombay. <br />
+        It served to allow entry and access to India.
+      </p>
+      <p>
+        The Gateway of India is located on the waterfront <br />
+        at Apollo Bunder area at the end of
+        <samp style="background-color: rgba(228, 72, 0, 0.686)"
+          >Chhatrapati Shivaji</samp
+        >
+        <br />
+        Marg in South Mumbai and overlooks the Arabian Sea. <br />
+        The monument has also been referred to as the Taj <br />
+        Mahal of Mumbai, and is the city’s top tourist
+      </p>
+    </section>
+    <br /><br />
+    <hr />
+    <br /><br />
+    <form action="p.php">
+      <div>
+        <label style="font-size: 120%" for="Gender"><b>Gender:</b></label
+        ><br />
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="Male" />
+      </div>
+      <div>
+        <label for="Female">Female</label>
+        <input type="radio" id="Female" name="gender" value="Female" />
+      </div>
+      <br /><br />
+      <hr />
+      <br /><br />
+      <h2>How to Reach</h2>
+      <div>
+        <label for="By">By Air</label>
+        <input type="checkbox" id="By" name="By" value="air" />
+      </div>
+      <div>
+        <label for="By Train">By Train</label>
+        <input type="checkbox" id="By Train" name="By Train" />
+      </div>
+      <div>
+        <label for="By Road">By Road</label>
+        <input type="checkbox" id="By Road" name="By Road" />
+      </div>
+      <br /><br />
+      <hr />
+      <br /><br />
+      <div>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" placeholder="raj" required />
+      </div>
+      <br />
+      <div>
+        <label for="lname">Last Name:</label>
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="pawar"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="user">User Name:</label>
+        <input
+          type="text"
+          id="user"
+          name="user"
+          placeholder="rajpawar12"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="raj@1234"
+          maxlength="8"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="phone">Phone#:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="+91 8968787111"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="rag12@gmail.com"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="bdate">Birthdate:</label>
+        <input type="date" id="bdate" name="bdate" />
+      </div>
+      <br />
+      <div>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" />
+      </div>
+      <br />
+      <div>
+        <label for="person">How Many Person Travel:</label>
+        <input
+          type="number"
+          id="person"
+          name="person"
+          required
+          min="0"
+          max="10"
+        /><br />
+      </div>
+      <br />
+      <div>
+        <label for="dbtime">Time And Date:</label>
+        <input type="datetime-local" id="dbtime" name="dbtime" />
+      </div>
+      <br />
+      <div>
+        <button type="button">Submit</button> |
+        <button type="reset">Reset</button>|
+        <button type="menu" disabled>Menu</button> |
+        <button type="submit">Complete</button> |
+      </div>
+      <br /><br />
+      <hr />
+      <br /><br />
+      <label for="week">week</label>
+      <input type="week" id="week" name="week" />
+      <!-- <label for="my file">file</label>
+      <input type="file" id="my file" name="my file" />
+      <input type="button" sum /> -->
+      <br /><br />
+      <hr />
+      <br /><br />
+      <section>
+        <div>
+          <!-- unordered list -->
+          <h2>Types of biscuit</h2>
+          <ul>
+            <li>sandwich biscuits</li>
+            <li>digestive biscuits</li>
+            <ul>
+              <li>ginger biscuits</li>
+              <li>shortbread biscuits</li>
+              <ul>
+                <li>chocolate chip biscuits</li>
+                <li>Anzac biscuits</li>
+                <ul style="list-style-type: georgian">
+                  <li>Southern Buttermilk Biscuits</li>
+                  <li>Dumplings</li>
+                </ul>
+              </ul>
+            </ul>
+          </ul>
+        </div>
+        <div>
+          <!-- Ordered lis  -->
+          <h3>Types of chocsolate</h3>
+          <ol type="A">
+            <li>Semisweeet Chocolate</li>
+            <li>Unsweetened Chocolate</li>
+            <ol type="a">
+              <li>Cocoa Powder</li>
+              <li>Sweet German Chocolate</li>
+              <ol>
+                <li>White Chocolate</li>
+                <li>Dark Chocolate</li>
+                <ol type="I">
+                  <li>Milk Chocolate</li>
+                  <li>Bittersweet Chocolate</li>
+                  <ol type="i">
+                    <li>Couverture Chocolate</li>
+                    <li>Ruby Chocolate</li>
+                  </ol>
+                </ol>
+              </ol>
+            </ol>
+          </ol>
+        </div>
+        <div>
+          <!-- Description Lists -->
+          <h3>Type of Ice Cream</h3>
+          <dl>
+            <dt>Ice Cream</dt>
+            <dd>- Gelato</dd>
+            <dd>- Custard Ice Cream</dd>
+          </dl>
+          <dl>
+            <dt>dairy – milk</dt>
+            <dd>- products made from milk</dd>
+            <dd>- skim milk powder</dd>
+          </dl>
+        </div>
+        <a href="#section1">go top</a> <br />
+      </section>
+    </form>
+    <br /><br />
+    <hr />
+    <br /><br />
+    <!-- table -->
+    <table
+      border="1px solid"
+      style="
+        border-spacing: 0px;
+        border-color: rgb(237, 0, 0);
+        width: 25%;
+        text-align: center;
+      "
+    >
+      <thead>
+        <tr>
+          <td colspan="2" rowspan="2"></td>
+          <td colspan="2">Average</td>
+          <td rowspan="2">Red eyes</td>
+        </tr>
+        <tr>
+          <td>Height</td>
+          <td>Weight</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2">Male</td>
+          <td>1.9</td>
+          <td>0.003</td>
+          <td>40%</td>
+        </tr>
+        <tr>
+          <td colspan="2">Female</td>
+          <td>1.7</td>
+          <td>0.002</td>
+          <td>43%</td>
+        </tr>
+      </tbody>
+    </table>
+    <br /><br />
+    <hr />
+    <br /><br />
+    <table
+      border="2px"
+      style="
+        border-spacing: 0px;
+        border-color: black;
+        text-align: center;
+        width: 25%;
+        border-style: solid;
+      "
+    >
+      <thead style="color: blue">
+        <tr>
+          <th>Columu 1</th>
+          <th>Columu 2</th>
+          <th>Columu 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Row 1 Cell</td>
+          <td>Row 1 Cell 2</td>
+          <td>Row 1 Cell 2</td>
+        </tr>
+        <tr>
+          <td>Row 2 Cell 2</td>
+          <td>Row 2 Cell 2</td>
+        </tr>
+      </tbody>
+
+      <tfoot style="text-align: left">
+        <tr>
+          <td colspan="3">Row 3 Cell 3</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br /><br />
+    <hr />
+    <br /><br />
+    <table
+      border="2px"
+      style="border-spacing: 0px; width: 50%; text-align: center"
+    >
+      <tr style="color: rgb(0, 0, 255)">
+        <td rowspan="2">A</td>
+        <td>B</td>
+        <td rowspan="3">D</td>
+        <td colspan="2">E</td>
+        <td>F</td>
+      </tr>
+      <tr style="color: rgb(44, 0, 0)">
+        <td>C</td>
+        <td rowspan="2">G</td>
+        <td rowspan="2">H</td>
+        <td rowspan="2">I</td>
+      </tr>
+      <tr style="color: rgb(255, 5, 184)">
+        <td colspan="2">J</td>
+      </tr>
+      <tr style="color: chocolate">
+        <td colspan="3">K</td>
+        <td>L</td>
+        <td colspan="2">M</td>
+      </tr>
+    </table>
+    <form>
+      <label for="File">File</label>
+      <input type="file" id="File" name="File" multiple /><br />
+      <button style="color: rgb(234, 18, 18)">complit</button>
+    </form>
+  </body>
+</html>
