@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.red{ 
+    height: 500px;
+    width: 500px;
+    /* background-color: red; */
+    border: 2px solid black;
+    color:rgb(0, 0, 255);
+    /* background-image: url("https://5.imimg.com/data5/LX/PM/GLADMIN-68162457/kawasaki-ninja-h2-bike-1000x1000.png");
+    /* background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center top;
+    background-attachment:local; */ 
+    background:white url("https://5.imimg.com/data5/LX/PM/GLADMIN-68162457/kawasaki-ninja-h2-bike-1000x1000.png") no-repeat local center
+}
+.green{
+    background-color: green;
+    color: #69f4c5;
+}
+ul{background-color: black;
+color: aliceblue;
+width: 50px;}
+.box1{
+    color: red;
+    background-color: rgba(100, 200, 255, 1);
+    padding-bottom: 20px;
+    
+}
+.box2{
+    color: aqua;
+    background-color: blue;
+    margin-top: 10px;
+}
