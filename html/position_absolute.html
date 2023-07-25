@@ -13,58 +13,62 @@
 
         body {
             margin: 0;
-
-
             background: #998235;
         }
 
         .wrapper {
-            position: relative;
+            height: 100vh;
             display: flex;
             justify-content: center;
-            align-content: center;
+            align-items: center;
+        }
+
+        .piano {
+            width: 60%;
+            height: 65%;
+            position: relative;
         }
 
         .white-keys {
             position: absolute;
-            top: 100px;
+            top: 0px;
             display: flex;
-            left: 109px;
-            gap: 5px;
+            left: 0px;
+            gap: 2.5%;
             align-items: stretch;
-            width: 180px;
-            height: 100px;
+            width: 100%;
+            height: 100%;
             background: #191919;
-            padding: 5px;
+            padding: 3%;
             border-radius: 10px;
-            padding-top: 15px;
+            padding-top: 8%;
         }
 
         .white {
             background: #FFFFFF;
-            margin-top: 10px;
-            padding-top: 20px;
-            width: 35px;
-            height: 70px;
+            margin-top: 6%;
+            /* padding-top: 20px; */
+            width: 100%;
+            height: 89%;
             border-radius: 5px;
         }
 
         .black-keys {
             position: absolute;
-            top: 125px;
-            left: 128px;
-            width: 200px;
-            height: 35px;
+            top: 25%;
+            left: 11%;
+            width: 110%;
+            height: 35%;
             display: flex;
             align-items: stretch;
-            gap: 10px;
+            gap: 5%;
         }
 
         .black {
             background: #191919;
-            width: 15px;
+            width: 7.6%;
             display: flex;
-            gap: 10px
+            /* gap: 10px */
         }
 
         .blank {
@@ -74,22 +78,24 @@
 
 <body>
     <div class="wrapper">
-        <div class="white-keys">
-            <div class="white"></div>
-            <div class="white"></div>
-            <div class="white"></div>
-            <div class="white"></div>
-            <div class="white"></div>
-            <div class="white"></div>
-            <div class="white"></div>
-        </div>
-        <div class="black-keys">
-            <div class="black"></div>
-            <div class="black"></div>
-            <div class="black blank"></div>
-            <div class="black"></div>
-            <div class="black"></div>
-            <div class="black"></div>
+        <div class="piano">
+            <div class="white-keys">
+                <div class="white"></div>
+                <div class="white"></div>
+                <div class="white"></div>
+                <div class="white"></div>
+                <div class="white"></div>
+                <div class="white"></div>
+                <div class="white"></div>
+            </div>
+            <div class="black-keys">
+                <div class="black"></div>
+                <div class="black"></div>
+                <div class="black blank"></div>
+                <div class="black"></div>
+                <div class="black"></div>
+                <div class="black"></div>
+            </div>
         </div>
     </div>
 </body>
