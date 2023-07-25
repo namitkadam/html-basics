@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            margin: 0;
+
+
+            background: #998235;
+        }
+
+        .wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .white-keys {
+            position: absolute;
+            top: 100px;
+            display: flex;
+            left: 109px;
+            gap: 5px;
+            align-items: stretch;
+            width: 180px;
+            height: 100px;
+            background: #191919;
+            padding: 5px;
+            border-radius: 10px;
+            padding-top: 15px;
+        }
+
+        .white {
+            background: #FFFFFF;
+            margin-top: 10px;
+            padding-top: 20px;
+            width: 35px;
+            height: 70px;
+            border-radius: 5px;
+        }
+
+        .black-keys {
+            position: absolute;
+            top: 125px;
+            left: 128px;
+            width: 200px;
+            height: 35px;
+            display: flex;
+            align-items: stretch;
+            gap: 10px;
+        }
+
+        .black {
+            background: #191919;
+            width: 15px;
+            display: flex;
+            gap: 10px
+        }
+
+        .blank {
+            background: none;
+        }
+    </style>
+
+<body>
+    <div class="wrapper">
+        <div class="white-keys">
+            <div class="white"></div>
+            <div class="white"></div>
+            <div class="white"></div>
+            <div class="white"></div>
+            <div class="white"></div>
+            <div class="white"></div>
+            <div class="white"></div>
+        </div>
+        <div class="black-keys">
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black blank"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+        </div>
+    </div>
+</body>
+
+</html>
