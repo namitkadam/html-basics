@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    padding: 1em 3em;
+    background-color: black;
+}
+nav .nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .nav_container .logo a{
+    color: rgb(255, 55, 0);
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 900;
+}
+nav .nav_container .wrapper_menu{
+    display: flex;
+}
+nav .nav_container .wrapper_menu .menu-list-wapper .menu li a{
+    color: rgb(254, 10, 20);
+    text-decoration: none;
+}
+nav .nav_container .wrapper_menu .nav-checkbox{
+    display: none;
+}
+nav .nav_container .wrapper_menu .toggle{
+    cursor: pointer;
+    font-size: 2em;
+    display: none;
+    color: red;
+}
+nav .nav_container .wrapper_menu .menu {
+    display: flex;
+    gap: 1.5em;
+    list-style: none;
+}
+/* --------------media query ------------ */
+@media ((max-width: 600px)){
+    nav .nav_container .wrapper_menu, .menu-list-wapper .menu {
+        flex-direction: column;
+    }
+    nav .nav_container .menu-list-wapper{
+        display: none;
+        background-color: #eee;
+        padding: 10px 20px;
+        border-radius: 5px;
+        position: absolute;
+        right: 0px;
+        top: 69px;
+        left: 0px;
+    }
+    nav .nav_container .wrapper_menu .toggle{
+        display: block;
+    }    
+    nav .nav_container .wrapper_menu .toggle .close{
+        display: none;
+    }
+    /* ------------checklist------------- */
+    .nav-checkbox:checked ~ .menu-list-wapper {
+        display: block;
+    }
+    .nav-checkbox:checked ~ .toggle .close{
+        display: block !important;
+    }
+    .nav-checkbox:checked ~ .toggle .dash-line{
+        display: none;
+    }
+}
