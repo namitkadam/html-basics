@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation practice</title>
+    <style>
+      .main {
+        height: 100vh;
+      }
+      .main1 {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        display: inline-block;
+        left: 44%;
+        top: 33%;
+      }
+      .text {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        font-size: 28px;
+        font-weight: 600;
+      }
+      .top-left {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: all 2s ease-in-out;
+        position: relative;
+        padding: 5px;
+      }
+      .main1:hover .top-left {
+        transform: translatex(-50px) rotate(90deg);
+      }
+      .top-right {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        transition: all 2s ease-in-out;
+        position: absolute;
+        top: 0%;
+        left: 100%;
+        padding: 5px;
+      }
+      .main1:hover .top-right {
+        transform: translatex(50px) rotate(-90deg);
+      }
+      .bottom-left {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        transition: all 2s ease-in-out;
+        position: absolute;
+        padding: 5px;
+      }
+      .main1:hover .bottom-left {
+        transform: translatex(-50px) rotate(-90deg);
+      }
+      .bottom-right {
+        width: 100px;
+        height: 100px;
+        background-color: chocolate;
+        transition: all 2s ease-in-out;
+        position: absolute;
+        padding: 5px;
+        left: 100%;
+      }
+      .main1:hover .bottom-right {
+        transform: translatex(50px) rotate(-90deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="text">Hey!!</div>
+      <div class="main1">
+        <div class="top-left"></div>
+        <div class="top-right"></div>
+        <div class="bottom-left"></div>
+        <div class="bottom-right"></div>
+      </div>
+    </div>
+  </body>
+</html>
