@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cup-animation</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        background-color: #8acdeb;
+      }
+      .cup {
+        position: relative;
+        height: 100vh;
+      }
+      .cup-body {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .cup-shae {
+        position: relative;
+        height: 200px;
+        width: 290px;
+        background-color: #fff;
+        border: 5px solid none;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+      }
+      .cup-handle {
+        display: inline-block;
+        height: 90px;
+        border: 10px solid #fff;
+        width: 95px;
+        border-top-right-radius: 100%;
+        border-bottom-right-radius: 100%;
+        border-left: none;
+        position: absolute;
+        right: -35%;
+      }
+      .steam {
+        width: 60px;
+        height: 60px;
+        background: #fff;
+        position: absolute;
+        border-radius: 50%;
+        box-shadow: 10px 5px #eee;
+        animation: steam 4s ease infinite;
+      }
+
+      .top-shadow {
+        box-shadow: 3px -5px 5px 2px #fff;
+      }
+      .bottom-shadow {
+        box-shadow: 3px 5px 5px 2px #fff;
+      }
+
+      @keyframes steam {
+        0% {
+          overflow: unset;
+          scale: 0.4;
+          transform: translateY(-60px);
+        }
+        100% {
+          scale: 1;
+          transform: translateY(-200px);
+          opacity: 0;
+          background-color: rgb(248, 248, 248);
+        }
+      }
+      #steam1 {
+        top: 5px;
+        left: 20px;
+      }
+      #steam2 {
+        top: 45px;
+        left: 65px;
+      }
+      #steam3 {
+        top: 40px;
+        left: 125px;
+      }
+      #steam4 {
+        top: 10px;
+        left: 175px;
+      }
+      #steam5 {
+        top: 100px;
+        left: 100px;
+      }
+      #steam6 {
+        top: 80px;
+        left: 105px;
+      }
+      .cup-shadow {
+        box-shadow: 10px 13px 20px 5px #5f5c5c5c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cup">
+      <div class="cup-body">
+        <div class="steam bottom-shadow" id="steam1"></div>
+        <div class="steam top-shadow" id="steam2"></div>
+        <div class="steam" id="steam3"></div>
+        <div class="steam" id="steam6"></div>
+        <div class="steam bottom-shadow" id="steam4"></div>
+        <div class="steam top-shadow" id="steam5"></div>
+        <div class="cup-shae cup-shadow">
+          <div class="cup-handle cup-shadow"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

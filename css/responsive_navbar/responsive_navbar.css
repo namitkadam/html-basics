@@ -40,7 +40,7 @@ nav .nav_container .wrapper_menu .menu {
     list-style: none;
 }
 /* --------------media query ------------ */
-@media ((max-width: 600px)){
+@media ((max-width: 61000px)){
     nav .nav_container .wrapper_menu, .menu-list-wapper .menu {
         flex-direction: column;
     }

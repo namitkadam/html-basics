@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cloud-animation</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        background-color: aqua;
+      }
+      .cloud {
+        display: block;
+        width: 400px;
+        height: 300px;
+        position: relative;
+        top: 50%;
+        animation: cloud 5s ease-out infinite;
+      }
+
+      .cloud1 {
+        height: 25%;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 50px;
+      }
+      .cloud2 {
+        height: 40%;
+        width: 40%;
+        border-radius: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: -70px;
+        left: 30px;
+      }
+      .cloud3 {
+        height: 50%;
+        width: 50%;
+        border-radius: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: -85px;
+        left: 165px;
+      }
+      .cloud4 {
+        height: 40%;
+        width: 40%;
+        border-radius: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: -130px;
+        left: 105px;
+      }
+      @keyframes cloud {
+        0% {
+          margin-left: 100px;
+        }
+        100% {
+          margin-left: 500px;
+        }
+      }
+      .drop {
+        width: 10%;
+        height: 20%;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cloud">
+      <div class="cloud1"></div>
+      <div class="cloud2"></div>
+      <div class="cloud3"></div>
+      <div class="cloud4"></div>
+    </div>
+  </body>
+</html>
